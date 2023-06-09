@@ -9,12 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^1.24.0",
+    "axios": "^1.4.0",
+    "faunadb": "^4.5.2",
     "next": "13.4.4",
+    "next-auth": "^4.22.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "sass": "^1.62.1",
+    "stripe": "^8.209.0"
   },
   "devDependencies": {
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.4"
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.2.8",
+    "eslint": "^8.42.0",
+    "eslint-config-next": "13.4.4",
+    "typescript": "^5.1.3"
   }
 }
