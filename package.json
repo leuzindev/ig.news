@@ -6,14 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.24.0",
+    "@types/prismic-dom": "^2.1.1",
     "axios": "^1.4.0",
     "faunadb": "^4.5.2",
     "next": "13.4.4",
     "next-auth": "^4.22.1",
+    "prismic-dom": "^2.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
@@ -22,10 +25,12 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
+    "@slicemachine/adapter-next": "^0.3.0",
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.8",
     "eslint": "^8.42.0",
     "eslint-config-next": "13.4.4",
+    "slice-machine-ui": "^1.2.0",
     "typescript": "^5.1.3"
   }
 }
