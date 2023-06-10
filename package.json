@@ -10,8 +10,8 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@prismicio/client": "^6.8.0",
     "@stripe/stripe-js": "^1.24.0",
-    "@types/prismic-dom": "^2.1.1",
     "axios": "^1.4.0",
     "faunadb": "^4.5.2",
     "next": "13.4.4",
@@ -25,12 +25,10 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
-    "@slicemachine/adapter-next": "^0.3.0",
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.8",
     "eslint": "^8.42.0",
     "eslint-config-next": "13.4.4",
-    "slice-machine-ui": "^1.2.0",
     "typescript": "^5.1.3"
   }
 }
