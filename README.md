@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignews <img src='https://github.com/jfernandesdev/ignews/blob/5c0c9fe741c5d1978165749976b90aad7965e7d9/public/favicon.png' width='50px' />
 
-## Getting Started
+Projeto Web desenvolvido durante o Bootcamp Ignite by Rocketseat • Trilha ReactJS - TEMA: "Ig.News" 📰⚛️
 
-First, run the development server:
+### Descrição:
 
-```bash
-npm run dev
-# or
-yarn dev
+O projeto trata-se de um blog onde os usuários terão acesso completo aos conteúdos de acordo com o status da sua assinatura mensal. É uma aplicação Serverless, ou seja, todo o processo que dependeria de um backend próprio foi integrado dentro do front-end seguindo o padrão da JAMStack.
+
+- [x] Integração e Consumo de postagens via Prismic CMS;
+- [x] Realização de assinatura mensal via Stripe;
+- [x] Autenticação dos usuários via Github OAuth;
+- [x] Dados salvos no Banco de dados FaunaDB;
+- [x] Layout responsivo (mobile e desktop).
+
+## Tecnologias utilizadas: 🚀
+
+- ReactJs | ^17.0.2
+- NextJs | 12.1.0
+- Next Auth | ^4.2.1
+- Typescript | ^4.6.2 -D
+- SASS | ^1.49.9
+- Prismic IO Client | 5.1.1
+- Stripe | ^8.209.0
+- Fauna DB | ^4.5.2
+- Jest | ^28.1.3 -D
+- Testing Library | ^12.1.5 -D
+
+
+## Instalação em sua máquina ⚙️
+
 ```
+# Clone o projeto e acesse a pasta:
+$ git clone https://github.com/leuzindev/ignews.git && cd ignews
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Instale as dependências:
+$ yarn
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Na raiz do projeto crie uma copia do arquivo .env.sample
+# Altere o nome da copia para .env.local
+# Preencha as variáveis ambiente de acordo com as instruções do arquivo 'servicesConfig' localizado na raiz do projeto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Execute stripe listen para ouvir eventos do webhook:
+$ stripe listen --forward-to localhost:3000/api/webhooks
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Rode o projeto: 
+$ yarn dev
 
-## Learn More
+# Para rodar os testes automatizados: 
+$ yarn test
 
-To learn more about Next.js, take a look at the following resources:
+// A aplicação estará disponível em seu navegador em http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+## Dados de testes do Checkout 🧪
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Pagamento bem-sucedido: 4242 4242 4242 4242
+- Falha no pagamento: 4000 0000 0000 9995
+- Precisa de autenticação: 4000 0025 0000 3155
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Desktop (screenshot):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Home  | Post List | 
+| --- | --- |
+| <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-desktop-1.png" /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-desktop-2.png" /> | 
+
+| Post Preview | Checkout |
+| --- | --- |
+| <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-desktop-3.png" /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-desktop-4.png" /> |
+
+### Mobile (screenshot):
+
+| Home | Post List | Post | Checkout |
+| --- | --- | --- | --- |
+| <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-1.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-2.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-3.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-4.png" width='275px' /> |
+
+<br>
+
+<img src="https://i.ibb.co/n1SbQZw/w-signature.png" alt="w-signature" border="0" width='300px' />
