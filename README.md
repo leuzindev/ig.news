@@ -75,5 +75,3 @@ $ yarn test
 | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-1.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-2.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-3.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignews/blob/ff41ff913da29adcbe7811e9e72b6a1d917d0f00/public/layout/layout-mobile-4.png" width='275px' /> |
 
 <br>
-
-<img src="https://i.ibb.co/n1SbQZw/w-signature.png" alt="w-signature" border="0" width='300px' />
